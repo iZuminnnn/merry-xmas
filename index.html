@@ -20,11 +20,17 @@
     <source src="Last_Christmas_I_gave_you_my_heart.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <section class="gift">
+
+  <script>
+    function playMusic() {
+      document.getElementById('audio-play').play();
+      var audio = document.getElementById("audio-play");
+      audio.volume = 0.4;
+    }
+  </script>
+  <section class="gift" onclick="playMusic()">
     <div class="gift-top hovered"></div>
     <div class="gift-bottom"></div>
-
-
   </section>
 
 
